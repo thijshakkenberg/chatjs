@@ -1,6 +1,5 @@
 ﻿<?php include("includes/head.php");?>
 
-
 <div class="container-fluid">
     <!--row1-->
     <?php include("includes/row1.php");?>

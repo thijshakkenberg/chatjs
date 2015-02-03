@@ -81,9 +81,9 @@ function init_chat()
 	if (user && user.id) return;
 	user.id = '';
 	user.to = '';
-	$('#description').fadeOut(300,function()
+	$('#description').fadeOut(400,function()
 	{
-		$('#chat').fadeIn(300,init_window);
+		$('#chat').fadeIn(400,init_window);
 		init_window();
 		setTimeout(init_window,1);
 	});

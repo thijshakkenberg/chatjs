@@ -5,7 +5,7 @@
 *  http://bbs.longkou.de
 */
 
-include('common.php');
+include('comon.php');
 $content = $_POST['content'];
 $title = $_POST['title'];
 $url = $_POST['url'];
