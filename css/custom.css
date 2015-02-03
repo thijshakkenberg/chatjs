@@ -1,0 +1,41 @@
+/*this is custom.css file*/
+
+#row1{
+    min-height: 60px;
+    height: 60px;
+    background-color: #843534;
+}
+
+#r2c1{
+    height: 190px;
+    min-height: 190px;
+    height: auto;
+    background-color: #337ab7;
+}
+
+#r2c2{
+    height: 190px;
+    min-height: 190px;
+    height: auto;
+    background-color: #080808;
+}
+
+/*#r3c1{*/
+    /*padding-top: 10px;*/
+    /*padding-right: 0px;*/
+    /*padding-left: 0px;*/
+    /*height: 400px;*/
+    /*min-height: 400px;*/
+/*}*/
+
+#r3c2{
+    height: 450px;
+    min-height: 450px;
+    background-color: #398439;
+}
+
+#row5{
+    min-height: 90px;
+    height: auto;
+    background-color: #b92c28;
+}

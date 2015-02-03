@@ -1,0 +1,106 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Wie.nu http://www.wie.nu</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link type="text/css" rel="stylesheet" href="style.css">
+		<meta name="Description" content="Wie.nu is een chat web" />
+		<meta name="Keywords" content="Search Keywords" />
+		<meta name="Author" content="Wie.nu" />
+        <script src="jquery.js"></script>
+        <script>
+        function init_window()
+        {
+        	$('#main').height($(window).height()-$('#header').height());
+        	$('#content').width($('#chat_window').width()-$('#disconnectwrapper').width()*2-6);
+        	
+			var space = 50;
+			if (navigator.userAgent.match(/msie\s7/i)) space = 50;
+			if (navigator.userAgent.match(/msie\s6/i)) space = 50;
+	
+        	$('#chat_window').height($(window).height()-$('#header').height()-$('#content').height()-space);
+        }
+        init_window();
+        window.onresize = init_window;
+        var lang = 
+        {
+        	send_error:'Send failed',
+        	bye:'Bye!',
+        	online_num:'Online：',
+        	waiting:'connecting...',
+        	me:'<span style="color:#333">Me：</span>',
+        	stranger:'<span style="color:#333">stranger：</span>',
+        	connected:'<span style="color:orange">connection succeeded!</span>Other side come from：',
+        	disconnected:'Other side disconnected。',
+        	typing:'<span style="font-size:12px;color:#999">Typing</span>',
+        	reconnect:'reconnecting',
+        	download:'Download chat log',
+        	logining:'<span style="color:red">Welkom Wie.nu</span>',
+        	logined:'<span style="color:orange">welkom Wie.nu, have fun!</span>',
+        	you_disconnect:'you have disconnected',
+        	contact_me:'&nbsp;<a href="http://www.wie.nu" target="_blank">Feedback to us</a>',
+			new_msg:'New Message'
+        };
+        var ajax_delay = 1000; //ms
+        </script>
+        <script src="chat.js"></script>
+    </head>
+    <body scroll="no">
+        <!--<div id="header">-->
+        	<!--<div id="header_content">-->
+        		<!--<table cellpadding="0" cellspacing="0" border="0">-->
+        			<!--<tr>-->
+        				<!--<td>-->
+
+
+
+						<!--</td>-->
+    	       			<!--<td style="text-align:right" valign="middle">-->
+    	       				<!--Online：<span id="online_num"></span>-->
+    	       			<!--</td>-->
+    	       		<!--</tr>-->
+    	       	<!--</table>-->
+    	    <!--</div>-->
+        <!--</div> -->
+        <div id="main">
+        	<div id="description">
+       		  <div style="width:600px;margin:0 auto;text-align:center;">
+	        		<div style="height:400px;float:left; width:300px;">
+	        		<!--advertentie1 begin-->
+					
+	        		<!--advertentie2 klaar-->
+	        		</div>
+	        		<div style="height:400px;float:left; width:230px;">
+	        			<div style="margin-top:70px;">
+	        			</div>
+	        			<div style="margin:20px 0;margin-bottom:40px;">
+                            Online：<span id="online_num"></span>
+	        				<a href="javascript:init_chat();"><img src="images/start.jpg" /></a>
+	        			</div>
+	        			
+	        		</div>
+        		</div>
+        		<div id="announcement">
+	        		<!--advertentie2 begin-->
+					
+	        		<!--advertentie2 klaar-->
+        		</div>
+        	</div>
+        	<div id="chat" style="display:none">
+        		<div id="chat_window">
+	 			</div>
+        		<div id="chat_bottom">
+        			<div id="disconnectwrapper" onclick="disconnect()">
+        				disconnect
+        			</div>
+	        			<textarea id="content" ></textarea>
+        			<div id="sendwrapper" onclick="send_bt()" >
+        				Send
+        			</div>
+        		</div>
+        	</div>
+        </div>
+		<div style="text-align:center">
+     </div>
+    </body>
+</html>
