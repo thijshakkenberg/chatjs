@@ -21,7 +21,7 @@ $(function()
 	});
 
 	setInterval("window.user.load_online='yes';",30000);
-	$.post('online.php?t='+Math.random(),{ },function(s)
+	$.post('includes/online.php?t='+Math.random(),{ },function(s)
 	{
 		$('#online_num').html(s);
 	});
@@ -90,10 +90,10 @@ function init_chat()
 	
 	$('#content').focus();
 			
-	$('<div id="typing"></div>').html(lang.typing).css('opacity','0').appendTo($('#chat_window'));
+	$('<div id="typing"></div>').html(lang.typing).css('opacity',0).appendTo($('#chat_window'));
 	show_notification(lang.logining);
 	
-	$.get('start.php?t='+Math.random(),{},function(_id)
+	$.get('includes/start.php?t='+Math.random(),{},function(_id)
 	{
 		id = parseInt(_id);
 		if (id)
@@ -144,7 +144,7 @@ function load_event(id)
 	else
 		user.send_content = '';
 	
-	$.post('event.php',user,function(_data)
+	$.post('includes/event.php',user,function(_data)
 	{
 		user.load_online = '';
 		if (_data && _data.events )
@@ -211,16 +211,19 @@ function show_msg(s,me)
 	if (!me)
 	{
 		$('#typing').css('opacity','0');
-		s = '<span style="color:#b400ac">'+s+'</span>';
-		var msg = $('<div class="msg"></div>').html(s);
+		//s = '<span style="color:#b400ac">'+s+'</span>';
+        s = '<div id="strager" class="bubble">'+s+'</div>';
+		var msg = $('<div id="strager_msg" class=""></div>').html(s);
 		$('#typing').before(msg);
 		
 		toggle_title(300);	
 	}
 	else
 	{
-		s = '<span style="color:#2a2a8f">'+s+'</span>';
-		var msg = $('<div class="msg"></div>').html(s).addClass('sending').css('opacity',0.5);
+		s = '<div id="me" class="bubble bubble--alt">'+s+'</div>';
+        //s = '<span class="bubble bubble--alt">'+s+'</span>';
+        //var msg = $('<div id="me_msg" class=""></div>').html(s).addClass('sending').css('opacity',1);
+        var msg = $('<div id="me_msg" class=""></div>').html(s);
 		$('#typing').before(msg);
 		
 		$('#content').focus();
@@ -246,7 +249,7 @@ function show_reconnect()
 {
 	$('#typing').before($('<div class="noticication"></div>').html(
 		'<input type="button" onclick="reconnect()" value="'+lang.reconnect+'" />'+lang.contact_me
-		+'&nbsp;<form action="download.php" method="post" target="download_frame" onsubmit="this.content.value = $(\'#chat_window\').html();return true;">'
+		+'&nbsp;<form action="../includes/download.php" method="post" target="download_frame" onsubmit="this.content.value = $(\'#chat_window\').html();return true;">'
 		+'<input type="hidden" name="content" />'
 		+'<input type="hidden" name="url" value="'+window.location.href.replace(/\??t?=?[0-9\.]*#?[a-z]*$/i,'')+'" />'
 		+'<input type="hidden" name="title" value="'+$(document.body).data('title')+'" />'
@@ -294,7 +297,7 @@ function send_bt()
 function disconnect(force)
 {
 	if (!user.id || !user.to) return;
-	$.post('disconnect.php',{id:user.id,to:user.to},function(s)
+	$.post('includes/disconnect.php',{id:user.id,to:user.to},function(s)
 	{
 		if (s == 'win')
 		{
