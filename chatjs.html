@@ -3,11 +3,21 @@
     <head>
         <title>Wie.nu http://www.wie.nu</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="Description" content="Wie.nu is een chat web" />
+        <meta name="Keywords" content="Search Keywords" />
+        <meta name="Author" content="Wie.nu" />
+
         <link type="text/css" rel="stylesheet" href="css/style.css">
-		<meta name="Description" content="Wie.nu is een chat web" />
-		<meta name="Keywords" content="Search Keywords" />
-		<meta name="Author" content="Wie.nu" />
+        <link type="text/css" rel="stylesheet" href="jmotion/css/jquery.emojiarea.css">
+        <link type="text/css" rel="stylesheet" href="jmotion/css/stylesheet.css">
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script src="js/jquery.js"></script>
+        <script src="jmotion/js/jquery.emojiarea.js"></script>
+        <script src="jmotion/js/emojis.js"></script>
+
+
         <script>
         function init_window()
         {
@@ -81,9 +91,9 @@
 	        		</div>
         		</div>
         		<!--<div id="announcement">-->
-	        		<!--&lt;!&ndash;advertentie2 begin&ndash;&gt;-->
+	        		<!--<!--advertentie2 begin-->-->
 					<!---->
-	        		<!--&lt;!&ndash;advertentie2 klaar&ndash;&gt;-->
+	        		<!--<!--advertentie2 klaar-->-->
         		<!--</div>-->
         	</div>
         	<div id="chat" style="display:none">
@@ -93,7 +103,9 @@
         			<div id="disconnectwrapper" onclick="disconnect()">
         				disconnect
         			</div>
-	        			<textarea id="content" ></textarea>
+                   		<textarea id="content" class="">:smile:</textarea>
+                    <button id="but1">but1</button>
+                    <script type="text/javascript">$('textarea').emojiarea({button: '#but1'});</script>
         			<div id="sendwrapper" onclick="send_bt()" >
         				Send
         			</div>
@@ -102,5 +114,7 @@
         </div>
 		<div style="text-align:center">
      </div>
+        <script type="text/javascript">$('textarea').emojiarea({button: '#your-button'});</script>
+
     </body>
 </html>
