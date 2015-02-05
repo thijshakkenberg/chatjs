@@ -67,6 +67,16 @@ line-height: 20px;
     float: right;
 }
 
+span.emotion{
+    width:42px; height:20px;
+    background:url(../images/fact_but.gif) no-repeat 2px 2px;
+    padding-left:20px;
+    cursor:pointer
+    }
+
+span.emotion:hover{
+    background-position:2px -28px
+    }
 
 
 
