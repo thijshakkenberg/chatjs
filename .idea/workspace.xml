@@ -28,6 +28,7 @@
       <file leaf-file-name="chatjs.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chatjs.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.39402986" vertical-offset="2839" max-vertical-offset="3654">
               <caret line="107" column="87" selection-start-line="107" selection-start-column="87" selection-end-line="107" selection-end-column="87" />
               <folding>
@@ -36,6 +37,15 @@
                 <marker date="1423135097821" expanded="false" signature="1877:1902" placeholder="..." />
                 <marker date="1423135097821" expanded="false" signature="2026:2035" placeholder="..." />
                 <marker date="1423135097821" expanded="false" signature="2091:2103" placeholder="..." />
+=======
+            <state vertical-scroll-proportion="0.04328358" vertical-offset="0" max-vertical-offset="3248">
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+              <folding>
+                <marker date="1423065924855" expanded="true" signature="1326:1338" placeholder="..." />
+                <marker date="1423065924855" expanded="true" signature="1472:1497" placeholder="..." />
+                <marker date="1423065924855" expanded="true" signature="1621:1630" placeholder="..." />
+                <marker date="1423065924855" expanded="true" signature="1686:1698" placeholder="..." />
+>>>>>>> parent of 105fab1... chatjs0.3
               </folding>
             </state>
           </provider>
@@ -64,9 +74,11 @@
       <file leaf-file-name="chat.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/chat.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6016" max-vertical-offset="9251">
+            <state vertical-scroll-proportion="-4.12" vertical-offset="6016" max-vertical-offset="9251">
               <caret line="211" column="5" selection-start-line="211" selection-start-column="5" selection-end-line="211" selection-end-column="5" />
-              <folding />
+              <folding>
+                <marker date="1423066495810" expanded="false" signature="596:608" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,7 +86,11 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.0" vertical-offset="1972" max-vertical-offset="4872">
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4872">
+>>>>>>> parent of 105fab1... chatjs0.3
               <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
@@ -87,9 +103,6 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="true" />
     </FindUsagesManager>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -147,17 +160,18 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chatjs" />
+              <option name="myItemId" value="lkchat" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chatjs" />
+              <option name="myItemId" value="lkchat" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -165,9 +179,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lkchat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chatjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -207,15 +234,15 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-env-vars>false</pass-parent-env-vars>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="1">
@@ -246,24 +273,30 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+=======
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> parent of 105fab1... chatjs0.3
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.128125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288948" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -294,6 +327,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3248">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+<<<<<<< HEAD
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1423135097821" expanded="false" signature="1731:1743" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="1877:1902" placeholder="..." />
@@ -329,6 +363,12 @@
             <marker date="1423135097821" expanded="false" signature="1877:1902" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="2026:2035" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="2091:2103" placeholder="..." />
+=======
+            <marker date="1423065924855" expanded="true" signature="1326:1338" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1472:1497" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1621:1630" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1686:1698" placeholder="..." />
+>>>>>>> parent of 105fab1... chatjs0.3
           </folding>
         </state>
       </provider>
@@ -346,11 +386,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3248">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+<<<<<<< HEAD
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1423135097821" expanded="false" signature="1731:1743" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="1877:1902" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="2026:2035" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="2091:2103" placeholder="..." />
+=======
+            <marker date="1423065924855" expanded="true" signature="1326:1338" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1472:1497" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1621:1630" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1686:1698" placeholder="..." />
+>>>>>>> parent of 105fab1... chatjs0.3
           </folding>
         </state>
       </provider>
@@ -360,11 +407,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3248">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+<<<<<<< HEAD
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1423135097821" expanded="false" signature="1731:1743" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="1877:1902" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="2026:2035" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="2091:2103" placeholder="..." />
+=======
+            <marker date="1423065924855" expanded="true" signature="1326:1338" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1472:1497" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1621:1630" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1686:1698" placeholder="..." />
+>>>>>>> parent of 105fab1... chatjs0.3
           </folding>
         </state>
       </provider>
@@ -373,7 +427,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="6003" max-vertical-offset="9222">
           <caret line="224" column="55" selection-start-line="224" selection-start-column="55" selection-end-line="224" selection-end-column="55" />
-          <folding />
+          <folding>
+            <marker date="1423066495810" expanded="false" signature="596:608" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -398,11 +454,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="696" max-vertical-offset="3248">
           <caret line="85" column="36" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
           <folding>
+<<<<<<< HEAD
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1423135097821" expanded="false" signature="1731:1743" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="1877:1902" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="2026:2035" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="2091:2103" placeholder="..." />
+=======
+            <marker date="1423065924855" expanded="true" signature="1326:1338" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1472:1497" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1621:1630" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1686:1698" placeholder="..." />
+>>>>>>> parent of 105fab1... chatjs0.3
           </folding>
         </state>
       </provider>
@@ -411,7 +474,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1852" max-vertical-offset="9164">
           <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
-          <folding />
+          <folding>
+            <marker date="1423066495810" expanded="false" signature="596:608" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -428,11 +493,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="696" max-vertical-offset="3248">
           <caret line="85" column="36" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
           <folding>
+<<<<<<< HEAD
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1423135097821" expanded="false" signature="1731:1743" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="1877:1902" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="2026:2035" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="2091:2103" placeholder="..." />
+=======
+            <marker date="1423065924855" expanded="true" signature="1326:1338" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1472:1497" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1621:1630" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1686:1698" placeholder="..." />
+>>>>>>> parent of 105fab1... chatjs0.3
           </folding>
         </state>
       </provider>
@@ -441,7 +513,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1852" max-vertical-offset="9164">
           <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
-          <folding />
+          <folding>
+            <marker date="1423066495810" expanded="false" signature="596:608" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -458,11 +532,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3364">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+<<<<<<< HEAD
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1423135097821" expanded="false" signature="1731:1743" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="1877:1902" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="2026:2035" placeholder="..." />
             <marker date="1423135097821" expanded="false" signature="2091:2103" placeholder="..." />
+=======
+            <marker date="1423065924855" expanded="true" signature="1326:1338" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1472:1497" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1621:1630" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1686:1698" placeholder="..." />
+>>>>>>> parent of 105fab1... chatjs0.3
           </folding>
         </state>
       </provider>
@@ -526,6 +607,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="12180" max-vertical-offset="104603">
           <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding />
+<<<<<<< HEAD
+=======
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../chat_web0.4/chat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2894738" vertical-offset="0" max-vertical-offset="261">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+>>>>>>> parent of 105fab1... chatjs0.3
         </state>
       </provider>
     </entry>
@@ -536,24 +627,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../chatjs+wie.nu0.1/css/bubble.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18079096" vertical-offset="2946" max-vertical-offset="5220">
+          <caret line="106" column="23" selection-start-line="21" selection-start-column="0" selection-end-line="106" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="689">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/chat.js">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6016" max-vertical-offset="9251">
-          <caret line="211" column="5" selection-start-line="211" selection-start-column="5" selection-end-line="211" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4872">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1972" max-vertical-offset="4872">
@@ -575,6 +675,28 @@
         <state vertical-scroll-proportion="-14.5" vertical-offset="261" max-vertical-offset="1363">
           <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/js/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.12" vertical-offset="6016" max-vertical-offset="9251">
+          <caret line="211" column="5" selection-start-line="211" selection-start-column="5" selection-end-line="211" selection-end-column="5" />
+          <folding>
+            <marker date="1423066495810" expanded="false" signature="596:608" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatjs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04328358" vertical-offset="0" max-vertical-offset="3248">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding>
+            <marker date="1423065924855" expanded="true" signature="1326:1338" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1472:1497" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1621:1630" placeholder="..." />
+            <marker date="1423065924855" expanded="true" signature="1686:1698" placeholder="..." />
+          </folding>
+>>>>>>> parent of 105fab1... chatjs0.3
         </state>
       </provider>
     </entry>
