@@ -3,12 +3,16 @@
     <head>
         <title>Wie.nu http://www.wie.nu</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Wie.nu is een chat web" />
+        <meta name="Keywords" content="Search Keywords" />
+        <meta name="Author" content="Wie.nu" />
+
         <link type="text/css" rel="stylesheet" href="css/style.css">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
-		<meta name="Description" content="Wie.nu is een chat web" />
-		<meta name="Keywords" content="Search Keywords" />
-		<meta name="Author" content="Wie.nu" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
 
         <script src="js/jquery.js"></script>
         <script>
@@ -92,7 +96,7 @@
             <div id="chat_page_row2">
                 <!--chat_page_r2c1-->
                 <div id="chat_page_r2c1" class="col-lg-1 col-md-1 col-sm-1">
-                    <div id="disconnectwrapper" onclick="disconnect()">disconnect</div>
+                    <button id="disconnectwrapper" onclick="disconnect()">disconnect</button>
                 </div>
                 <!--chat_page_r2c2-->
                 <div id="chat_page_r2c2" class="col-lg-10 col-md-10 col-sm-10">
@@ -107,7 +111,7 @@
                 </div>
                 <!--chat_page_r2c3-->
                 <div id="chat_page_r2c3" class="col-lg-1 col-md-1 col-sm-1">
-                    <div id="sendwrapper" onclick="send_bt()">Send</div>
+                    <button id="sendwrapper" onclick="send_bt()">Send</button>
                 </div>
             </div>
        	</div>
@@ -132,7 +136,6 @@
                 return "You sure you want leave?";
             }
         </script>
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
     </body>
 </html>
