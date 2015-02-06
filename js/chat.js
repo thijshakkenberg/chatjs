@@ -207,7 +207,7 @@ function show_notification(s)
 
 function show_msg(s,me)
 {
-	
+	s=replace_em(s);
 	if (!me)
 	{
 		$('#typing').css('opacity','0');
@@ -230,6 +230,15 @@ function show_msg(s,me)
 	}
 	msg.width('0%').animate({width:'100%'},300);
 	$('#chat_window').get(0).scrollTop = $('#chat_window').get(0).scrollHeight;
+}
+
+//vertalen emotion
+function replace_em(str){
+    str = str.replace(/\</g,'&lt;');
+    str = str.replace(/\>/g,'&gt;');
+    str = str.replace(/\n/g,'<br/>');
+    str = str.replace(/\[em_([0-9]*)\]/g,'<img src="motion_face_plugin/arclist/$1.gif" border="0" />');
+    return str;
 }
 
 function show_typing()
@@ -290,9 +299,10 @@ function toggle_title(t)
 
 function send_bt()
 {
-	send($('#content').val());
+    send($('#content').val());
 	$('#content').val('').focus();
 }
+
 
 function disconnect(force)
 {
