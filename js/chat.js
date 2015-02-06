@@ -211,7 +211,7 @@ function show_msg(s,me)
 	if (!me)
 	{
 		$('#typing').css('opacity','0');
-		//s = '<span style="color:#b400ac">'+s+'</span>';
+		s = '<span style="color:#FF5E5E; font-size:26px">'+s+'</span>'; //strager msg css
         s = '<div id="strager" class="bubble">'+s+'</div>';
 		var msg = $('<div id="strager_msg" class=""></div>').html(s);
 		$('#typing').before(msg);
@@ -220,9 +220,8 @@ function show_msg(s,me)
 	}
 	else
 	{
+        s = '<span style="color:#1f6377; font-size:26px">'+s+'</span>';  //me msg css
 		s = '<div id="me" class="bubble bubble--alt">'+s+'</div>';
-        //s = '<span class="bubble bubble--alt">'+s+'</span>';
-        //var msg = $('<div id="me_msg" class=""></div>').html(s).addClass('sending').css('opacity',1);
         var msg = $('<div id="me_msg" class=""></div>').html(s);
 		$('#typing').before(msg);
 		
