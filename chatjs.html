@@ -9,9 +9,10 @@
         <meta name="Author" content="Wie.nu" />
 
         <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
 
 
         <script src="js/jquery.js"></script>
@@ -85,33 +86,34 @@
         </div>
     </div>
         <!--chat_page-->
-        <div id="chat_page">
+        <div id="chat_page" class="modal-content">
             <!--chat_page_row1-->
-            <div id="chat_page_row1">
+            <div id="chat_page_row1" class="modal-body">
                 <!--chat_window-->
                 <div id="chat_window">
+
                 </div>
             </div>
             <!--chat_page_row2-->
-            <div id="chat_page_row2">
+            <div id="chat_page_row2" class="modal-footer">
                 <!--chat_page_r2c1-->
                 <div id="chat_page_r2c1" class="col-lg-1 col-md-1 col-sm-1">
-                    <button id="disconnectwrapper" onclick="disconnect()">disconnect</button>
+                    <button id="disconnectwrapper" onclick="disconnect()">Close</button>
                 </div>
                 <!--chat_page_r2c2-->
                 <div id="chat_page_r2c2" class="col-lg-10 col-md-10 col-sm-10">
                     <!--chat_page_r2c2_r1-->
-                    <div id="chat_page_r2c2_r1" class="col-lg-12 col-md-12 col-sm-12">
+                    <div id="chat_page_r2c2_r1" class="col-lg-12 col-md-12 col-sm-12 modal-body">
                         <span class="emotion">emotion</span>
                     </div>
                     <!--chat_page_r2c2_r2-->
-                    <div id="chat_page_r2c2_r2" class="col-lg-12 col-md-12 col-sm-12">
-                        <textarea id="content"></textarea>
+                    <div id="chat_page_r2c2_r2" class="col-lg-12 col-md-12 col-sm-12 modal-footer">
+                        <input id="content" class="form-control input-lg" type="text" id="inputLarge">
                     </div>
                 </div>
                 <!--chat_page_r2c3-->
                 <div id="chat_page_r2c3" class="col-lg-1 col-md-1 col-sm-1">
-                    <button id="sendwrapper" onclick="send_bt()">Send</button>
+                    <button id="sendwrapper" type="button" class="btn btn-primary" onclick="send_bt()">Send</button>
                 </div>
             </div>
        	</div>
