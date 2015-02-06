@@ -4,21 +4,24 @@
         <title>Wie.nu http://www.wie.nu</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
 		<meta name="Description" content="Wie.nu is een chat web" />
 		<meta name="Keywords" content="Search Keywords" />
 		<meta name="Author" content="Wie.nu" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <script src="js/jquery.js"></script>
         <script>
         function init_window()
         {
-        	$('#main').height($(window).height()-$('#header').height());
-        	$('#content').width($('#chat_window').width()-$('#disconnectwrapper').width()*2-6);
+        	$('#main_page').height($(window).height()); //main-page height
+//        	$('#content').width($('#chat_window').width()-$('#disconnectwrapper').width()*2-6);
         	
-			var space = 50;
-			if (navigator.userAgent.match(/msie\s7/i)) space = 50;
-			if (navigator.userAgent.match(/msie\s6/i)) space = 50;
+//			var space = 50;
+//			if (navigator.userAgent.match(/msie\s7/i)) space = 50;
+//			if (navigator.userAgent.match(/msie\s6/i)) space = 50;
 	
-        	$('#chat_window').height($(window).height()-$('#header').height()-$('#content').height()-space);
+//        	$('#chat_window').height($(window).height()-$('#header').height()-$('#content').height()-space);
         }
         init_window();
         window.onresize = init_window;
@@ -46,65 +49,70 @@
         <script src="js/chat.js"></script>
     </head>
     <body scroll="no">
-        <!--<div id="header">-->
-        	<!--<div id="header_content">-->
-        		<!--<table cellpadding="0" cellspacing="0" border="0">-->
-        			<!--<tr>-->
-        				<!--<td>-->
+    <!--main_page-->
+    <div id="main_page">
+        <!--front_page-->
+        <div id="front_page">
+        <!--front_page_row1-->
+        <div id="front_page_row1">
 
+        </div>
 
+        <!--front_page_row2-->
+        <div id="front_page_row2">
+            <!--front_page_r2c1-->
+            <div id="front_page_r2c1" class="col-lg-4 col-md-4 hidden-sm hidden-xs">
 
-						<!--</td>-->
-    	       			<!--<td style="text-align:right" valign="middle">-->
-    	       				<!--Online：<span id="online_num"></span>-->
-    	       			<!--</td>-->
-    	       		<!--</tr>-->
-    	       	<!--</table>-->
-    	    <!--</div>-->
-        <!--</div> -->
-        <div id="main">
-        	<div id="description">
-       		  <div style="width:600px;margin:0 auto;text-align:center;">
-	        		<div style="height:400px;float:left; width:300px;">
-	        		<!--advertentie1 begin-->
-					
-	        		<!--advertentie2 klaar-->
-	        		</div>
-	        		<div style="height:400px;float:left; width:230px;">
-	        			<div style="margin-top:70px;">
-	        			</div>
-	        			<div style="margin:20px 0;margin-bottom:40px;">
-                            Online：<span id="online_num"></span>
-	        				<a href="javascript:init_chat();"><img src="images/start.jpg" /></a>
-	        			</div>
-	        			
-	        		</div>
-        		</div>
-        		<!--<div id="announcement">-->
-	        		<!--&lt;!&ndash;advertentie2 begin&ndash;&gt;-->
-					<!---->
-	        		<!--&lt;!&ndash;advertentie2 klaar&ndash;&gt;-->
-        		<!--</div>-->
-        	</div>
-        	<div id="chat" style="display:none">
-        		<div id="chat_window">
-	 			</div>
-        		<div id="chat_bottom">
-        			<div id="disconnectwrapper" onclick="disconnect()">
-        				disconnect
-        			</div>
-                    <div>
+            </div>
+            <!--front_page_r2c2-->
+            <div id="front_page_r2c2" class="col-lg-4 col-md-4">
+                Online：<span id="online_num"></span>
+                <a href="javascript:init_chat();"><img src="images/start.jpg" /></a>
+            </div>
+            <!--front_page_row3-->
+            <div id="front_page_r2c3" class="col-lg-4 col-md-4 hidden-sm hidden-xs">
+
+            </div>
+        </div>
+
+        <!--row3-->
+        <div id="front_page_row3">
+
+        </div>
+    </div>
+        <!--chat_page-->
+        <div id="chat_page">
+            <!--chat_page_row1-->
+            <div id="chat_page_row1">
+                <!--chat_window-->
+                <div id="chat_window">
+                </div>
+            </div>
+            <!--chat_page_row2-->
+            <div id="chat_page_row2">
+                <!--chat_page_r2c1-->
+                <div id="chat_page_r2c1" class="col-lg-1 col-md-1 col-sm-1">
+                    <div id="disconnectwrapper" onclick="disconnect()">disconnect</div>
+                </div>
+                <!--chat_page_r2c2-->
+                <div id="chat_page_r2c2" class="col-lg-10 col-md-10 col-sm-10">
+                    <!--chat_page_r2c2_r1-->
+                    <div id="chat_page_r2c2_r1" class="col-lg-12 col-md-12 col-sm-12">
                         <span class="emotion">emotion</span>
                     </div>
-	        			<textarea id="content"></textarea>
-        			<div id="sendwrapper" onclick="send_bt()" >
-        				Send
-        			</div>
-        		</div>
-        	</div>
-        </div>
-		<div style="text-align:center">
-     </div>
+                    <!--chat_page_r2c2_r2-->
+                    <div id="chat_page_r2c2_r2" class="col-lg-12 col-md-12 col-sm-12">
+                        <textarea id="content"></textarea>
+                    </div>
+                </div>
+                <!--chat_page_r2c3-->
+                <div id="chat_page_r2c3" class="col-lg-1 col-md-1 col-sm-1">
+                    <div id="sendwrapper" onclick="send_bt()">Send</div>
+                </div>
+            </div>
+       	</div>
+    </div>
+
 
         <script  src="motion_face_plugin/js/jquery.min.js"></script>
         <script type="text/javascript" src="motion_face_plugin/js/jquery.qqFace.js"></script>
@@ -124,6 +132,7 @@
                 return "You sure you want leave?";
             }
         </script>
-
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     </body>
 </html>

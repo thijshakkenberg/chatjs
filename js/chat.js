@@ -81,10 +81,10 @@ function init_chat()
 	if (user && user.id) return;
 	user.id = '';
 	user.to = '';
-	$('#description').fadeOut(400,function()
+	$('#front_page').fadeOut(400,function() //hide front page
 	{
-		$('#chat').fadeIn(400,init_window);
-		init_window();
+		$('#chat_page').fadeIn(400,init_window); //show chat page
+		init_window();                      //Initialization
 		setTimeout(init_window,1);
 	});
 	
