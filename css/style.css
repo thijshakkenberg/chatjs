@@ -1,7 +1,8 @@
 /*=========================================================================*/
 /*custom*/
 #me_msg{
-    /*float: left;*/
+    width: 100%;
+    overflow: hidden;
 
 }
 
@@ -45,8 +46,8 @@ span.emotion:hover{
         #front_page_row3{height: 360px; width: 1550px; background-color: #002a80}
     /*=========================================================================*/
     #chat_page{position: relative;
-        min-height:100%;
-        padding-bottom: 4%; /*height van bottom*/
+        min-height:99%;
+        padding-bottom: 0%;
         padding-right: 0px;
         padding-left: 0px;
         padding-top: 0px;
@@ -63,8 +64,8 @@ span.emotion:hover{
             /*=========================================================================*/
             #chat_window{
                 background-color: #c4e3f3;
-                min-height: 500px; /*must have defualt height*/
-
+                min-height: 700px; /*must have defualt height*/
+                margin-bottom: 75px;/*height van bottom*/
             }
         /*=========================================================================*/
         #chat_page_row2{bottom: 0; position: absolute; min-width: 100%;
