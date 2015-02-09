@@ -32,9 +32,9 @@
 			}
 			$(this).parent().append(strFace);
 			var offset = $(this).position();
-			var top = offset.top + $(this).outerHeight();
+			var top = -150+(offset.top + $(this).outerHeight());
 			$('#'+id).css('top',top);
-			$('#'+id).css('left',offset.left);
+			$('#'+id).css('left',20+(offset.left));
 			$('#'+id).show();
 			e.stopPropagation();
 		});
