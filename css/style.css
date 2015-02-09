@@ -29,7 +29,7 @@ span.emotion:hover{
 
 
 /*=========================================================================*/
-#main_page{position: relative;overflow-y: scroll;}
+#main_page{position: relative;}
     /*=========================================================================*/
     #front_page{}
         /*=========================================================================*/
@@ -59,13 +59,20 @@ span.emotion:hover{
             padding-right: 0px;
             padding-left: 0px;
             padding-bottom: 0px;
-            border-bottom: 80px;
+            border-bottom: 20px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+
         }
             /*=========================================================================*/
             #chat_window{
                 background-color: #c4e3f3;
                 min-height: 700px; /*must have defualt height*/
                 margin-bottom: 75px;/*height van bottom*/
+                overflow-x: hidden;
+                overflow-y: auto;
+                height: 300px;
+
             }
         /*=========================================================================*/
         #chat_page_row2{bottom: 0; position: absolute; min-width: 100%;
