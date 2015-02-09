@@ -88,33 +88,37 @@
         <!--chat_page-->
         <div id="chat_page" class="">
             <!--chat_page_row1-->
-            <div id="chat_page_row1" class="">
+            <div id="chat_page_row1" class="panel-body">
                 <!--chat_window-->
                 <div id="chat_window">
 
                 </div>
             </div>
             <!--chat_page_row2-->
-            <div id="chat_page_row2" class="">
+            <div id="chat_page_row2" class="input-group">
                 <!--chat_page_r2c1-->
-                <div id="chat_page_r2c1" class="col-lg-1 col-md-1 col-sm-1">
-                    <button id="disconnectwrapper" onclick="disconnect()">Close</button>
-                </div>
+                <!--<div id="chat_page_r2c1" class="col-lg-1 col-md-1 col-sm-1">-->
+                <span class="input-group-btn">
+                    <button id="disconnectwrapper" type="button" class="btn btn-primary" onclick="disconnect()">Close</button>
+                </span>
+                <!--</div>-->
                 <!--chat_page_r2c2-->
-                <div id="chat_page_r2c2" class="col-lg-10 col-md-10 col-sm-10">
+                <!--<div id="chat_page_r2c2" class="col-lg-10 col-md-10 col-sm-10 input-group-addon">-->
                     <!--chat_page_r2c2_r1-->
-                    <div id="chat_page_r2c2_r1" class="col-lg-12 col-md-12 col-sm-12 modal-body">
-                        <span class="emotion">emotion</span>
-                    </div>
+                    <!--<div id="chat_page_r2c2_r1" class="col-lg-12 col-md-12 col-sm-12">-->
+                        <span id="emotion" class="emotion">emotion</span>
+                    <!--</div>-->
                     <!--chat_page_r2c2_r2-->
-                    <div id="chat_page_r2c2_r2" class="col-lg-12 col-md-12 col-sm-12 modal-footer">
-                        <input id="content" class="form-control input-lg" type="text" id="inputLarge">
-                    </div>
-                </div>
+                    <!--<div id="chat_page_r2c2_r2" class="col-lg-12 col-md-12 col-sm-12">-->
+                        <input id="content" class="form-control input-lg" type="text" placeholder="Input here">
+                    <!--</div>-->
+                <!--</div>-->
                 <!--chat_page_r2c3-->
-                <div id="chat_page_r2c3" class="col-lg-1 col-md-1 col-sm-1">
+                <!--<div id="chat_page_r2c3" class="col-lg-1 col-md-1 col-sm-1">-->
+                <span class="input-group-btn">
                     <button id="sendwrapper" type="button" class="btn btn-primary" onclick="send_bt()">Send</button>
-                </div>
+                </span>
+                <!--</div>-->
             </div>
        	</div>
     </div>

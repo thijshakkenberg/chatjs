@@ -103,29 +103,64 @@ span.emotion:hover{
     /*=========================================================================*/
     #chat_page{position: relative;min-height:100%;}
         /*=========================================================================*/
-        #chat_page_row1{}
+        #chat_page_row1{
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-left: 0px;
+            padding-bottom: 0px;
+        }
             /*=========================================================================*/
-            #chat_window{}
+            #chat_window{background-color: #ace44b;min-height: 600px;padding-bottom: 65px;}
         /*=========================================================================*/
-        #chat_page_row2{bottom: 0; position: absolute;}
+        #chat_page_row2{bottom: 0; position: absolute; min-width: 50%;
+            padding-bottom: 0px;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
             /*=========================================================================*/
-            #chat_page_r2c1{}
+            #chat_page_r2c1{
+                padding-right: 0px;
+                padding-left: 0px;
+            }
                 /*=========================================================================*/
-                #disconnectwrapper{}
+                #disconnectwrapper{
+                    width: 126px;
+                    height: 64px;
+                }
             /*=========================================================================*/
-            #chat_page_r2c2{}
+            #chat_page_r2c2{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
                 /*=========================================================================*/
                 #chat_page_r2c2_r1{}
                     /*=========================================================================*/
-                    #emotion{}
+                    #emotion{
+                        margin-left: 20px;
+                    }
                 /*=========================================================================*/
-                #chat_page_r2c2_r2{}
+                #chat_page_r2c2_r2{
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
                     /*=========================================================================*/
-                    #content{}
+                    #content{
+                        margin-left: 10px;
+                        border-right-width: 10px;
+                        margin-right: 0px;
+                    }
             /*=========================================================================*/
-            #chat_page_r2c3{}
+            #chat_page_r2c3{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
                 /*=========================================================================*/
-                #sendwrapper{}
+                #sendwrapper{
+                    width: 126px;
+                    height: 64px;
+                    margin-left: 20px;
+
+                }
 
 
 /*=========================================================================*/
