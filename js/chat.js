@@ -221,8 +221,8 @@ function show_msg(s,me)
 	else
 	{
         s = '<span id="leftMsg" style="color:#1f6377; font-size:26px">'+s+'</span>';  //me msg css
-		s = '<div id="me" class="bubble bubble--alt next">'+s+'</div>';
-        var msg = $('<div id="me_msg" class="pager"></div>').html(s);
+		s = '<div id="me" class="bubble bubble--alt">'+s+'</div>';
+        var msg = $('<div id="me_msg" class=""></div>').html(s);
 		$('#typing').before(msg);
 		
 		$('#content').focus();
