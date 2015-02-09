@@ -19,14 +19,7 @@
         <script>
         function init_window()
         {
-        	$('#main_page').height($(window).height()); //main-page height
-//        	$('#content').width($('#chat_window').width()-$('#disconnectwrapper').width()*2-6);
-        	
-//			var space = 50;
-//			if (navigator.userAgent.match(/msie\s7/i)) space = 50;
-//			if (navigator.userAgent.match(/msie\s6/i)) space = 50;
-	
-//        	$('#chat_window').height($(window).height()-$('#header').height()-$('#content').height()-space);
+        	$('#main_page').height($(window).height());
         }
         init_window();
         window.onresize = init_window;
@@ -86,39 +79,28 @@
         </div>
     </div>
         <!--chat_page-->
-        <div id="chat_page" class="">
+        <div id="chat_page" class="list-group-item">
             <!--chat_page_row1-->
-            <div id="chat_page_row1" class="panel-body">
+            <div id="chat_page_row1" class="list-group-item-heading">
                 <!--chat_window-->
                 <div id="chat_window">
 
                 </div>
             </div>
             <!--chat_page_row2-->
-            <div id="chat_page_row2" class="input-group">
-                <!--chat_page_r2c1-->
-                <!--<div id="chat_page_r2c1" class="col-lg-1 col-md-1 col-sm-1">-->
+            <div id="chat_page_row2" class="input-group list-group-item-text">
+
                 <span class="input-group-btn">
                     <button id="disconnectwrapper" type="button" class="btn btn-primary" onclick="disconnect()">Close</button>
                 </span>
-                <!--</div>-->
-                <!--chat_page_r2c2-->
-                <!--<div id="chat_page_r2c2" class="col-lg-10 col-md-10 col-sm-10 input-group-addon">-->
-                    <!--chat_page_r2c2_r1-->
-                    <!--<div id="chat_page_r2c2_r1" class="col-lg-12 col-md-12 col-sm-12">-->
-                        <span id="emotion" class="emotion">emotion</span>
-                    <!--</div>-->
-                    <!--chat_page_r2c2_r2-->
-                    <!--<div id="chat_page_r2c2_r2" class="col-lg-12 col-md-12 col-sm-12">-->
-                        <input id="content" class="form-control input-lg" type="text" placeholder="Input here">
-                    <!--</div>-->
-                <!--</div>-->
-                <!--chat_page_r2c3-->
-                <!--<div id="chat_page_r2c3" class="col-lg-1 col-md-1 col-sm-1">-->
+
+                <span id="emotion" class="emotion">emotion</span>
+
+                    <input id="content" class="form-control input-lg" type="text" placeholder="Input here">
+
                 <span class="input-group-btn">
                     <button id="sendwrapper" type="button" class="btn btn-primary" onclick="send_bt()">Send</button>
                 </span>
-                <!--</div>-->
             </div>
        	</div>
     </div>
@@ -140,7 +122,14 @@
         <script type="text/javascript">
             window.onbeforeunload = function(){
                 return "You sure you want leave?";
-            }
+            };
+            //keypress event, scroll always down
+            $(document).keyup(function(event){
+                if(event.keyCode ==13){
+                    var scroll_down=$('#main_page');
+                    scroll_down.scrollTop(scroll_down[0].scrollHeight);
+                }
+            });
         </script>
 
     </body>

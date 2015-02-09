@@ -220,9 +220,9 @@ function show_msg(s,me)
 	}
 	else
 	{
-        s = '<span style="color:#1f6377; font-size:26px">'+s+'</span>';  //me msg css
-		s = '<div id="me" class="bubble bubble--alt">'+s+'</div>';
-        var msg = $('<div id="me_msg" class=""></div>').html(s);
+        s = '<span id="leftMsg" style="color:#1f6377; font-size:26px">'+s+'</span>';  //me msg css
+		s = '<div id="me" class="bubble bubble--alt next">'+s+'</div>';
+        var msg = $('<div id="me_msg" class="pager"></div>').html(s);
 		$('#typing').before(msg);
 		
 		$('#content').focus();
@@ -300,8 +300,14 @@ function send_bt()
 {
     send($('#content').val());
 	$('#content').val('').focus();
+    scrollDown();
 }
 
+//keypress event, scroll always down
+function scrollDown(){
+    var scroll_down=$('#main_page');
+    scroll_down.scrollTop(scroll_down[0].scrollHeight);
+}
 
 function disconnect(force)
 {
