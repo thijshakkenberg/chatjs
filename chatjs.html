@@ -20,6 +20,7 @@
         function init_window()
         {
         	$('#main_page').height($(window).height());
+
         }
         init_window();
         window.onresize = init_window;
@@ -45,8 +46,10 @@
         var ajax_delay = 1000; //ms
         </script>
         <script src="js/chat.js"></script>
+
     </head>
     <body scroll="no">
+    <audio id="chatSound" src='sound/sendSound.mp3'></audio>
     <!--main_page-->
     <div id="main_page" scroll="no">
         <!--front_page-->
@@ -99,7 +102,7 @@
                     <input id="content" class="form-control input-lg" type="text" placeholder="Input here">
 
                 <span class="input-group-btn img-responsive">
-                    <button id="sendwrapper" type="button" class="btn btn-primary img-responsive" onclick="send_bt()">Send</button>
+                    <button id="sendwrapper" type="button" class="btn btn-primary img-responsive" onclick="send_bt();chatSound.play();">Send</button>
                 </span>
             </div>
        	</div>
@@ -126,6 +129,7 @@
             //keypress event, scroll always down
             $(document).keyup(function(event){
                 if(event.keyCode ==13){
+                    chatSound.play();
                     var scroll_down=$('#main_page');
                     scroll_down.scrollTop(scroll_down[0].scrollHeight);
                 }

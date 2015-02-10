@@ -125,12 +125,14 @@ function init_chat()
 	});
 }
 
+
 function send(s)
 {
-	if (!s || !user.to || !user.id) return;
+    if (!s || !user.to || !user.id) return;
 	show_msg(lang.me+s,1);
 	user.typing = '';
 	user.send.push(s);
+
 }
 
 function load_event(id)
