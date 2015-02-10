@@ -256,7 +256,7 @@ function stop_typing()
 function show_reconnect()
 {
 	$('#typing').before($('<div class="noticication"></div>').html(
-		'<input type="button" onclick="reconnect()" value="'+lang.reconnect+'" />'+lang.contact_me
+		'<input class="btn btn-primary" type="button" onclick="reconnect()" value="'+lang.reconnect+'" />'+lang.contact_me
 		+'&nbsp;<form action="../includes/download.php" method="post" target="download_frame" onsubmit="this.content.value = $(\'#chat_window\').html();return true;">'
 		+'<input type="hidden" name="content" />'
 		+'<input type="hidden" name="url" value="'+window.location.href.replace(/\??t?=?[0-9\.]*#?[a-z]*$/i,'')+'" />'
@@ -269,7 +269,9 @@ function show_reconnect()
 
 function reconnect()
 {
-	window.location.href = window.location.href.replace(/\??t?=?[0-9\.]*#?[a-z]*$/i,'')+'?t='+Math.random()+'#autostart';
+    $( "#content" ).prop( "disabled", false );
+    init_chat();
+	//window.location.href = window.location.href.replace(/\??t?=?[0-9\.]*#?[a-z]*$/i,'')+'?t='+Math.random()+'#autostart';
 }
 
 function toggle_title(t)
@@ -317,6 +319,7 @@ function disconnect(force)
 		if (s == 'win')
 		{
 			show_reconnect();
+            $( "#content" ).prop( "disabled", true );
 		}
 		else
 		{
