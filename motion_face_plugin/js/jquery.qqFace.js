@@ -42,6 +42,7 @@
 		$(document).click(function(){
 			$('#'+id).hide();
 			$('#'+id).remove();
+            $('#content').focus(); /*after click face focus content agian*/
 		});
 	};
 
