@@ -49,7 +49,7 @@
 
     </head>
     <body scroll="no">
-    <audio id="chatSound" src='sound/sendSound.mp3'></audio>
+    <audio id="chatSound" src='sound/sendSound.mp3'></audio> <!--send en receive msg sound-->
     <!--main_page-->
     <div id="main_page" scroll="no">
         <!--front_page-->
@@ -102,7 +102,7 @@
                     <input id="content" class="form-control input-lg" type="text" placeholder="Input here">
 
                 <span class="input-group-btn img-responsive">
-                    <button id="sendwrapper" type="button" class="btn btn-primary img-responsive" onclick="send_bt();chatSound.play();">Send</button>
+                    <button id="sendwrapper" type="button" class="btn btn-primary img-responsive" onclick="send_bt();chatSound.play();<!--send btn sound-->">Send</button>
                 </span>
             </div>
        	</div>
@@ -129,7 +129,7 @@
             //keypress event, scroll always down
             $(document).keyup(function(event){
                 if(event.keyCode ==13){
-                    chatSound.play();
+                    chatSound.play(); /*key press sound*/
                     var scroll_down=$('#main_page');
                     scroll_down.scrollTop(scroll_down[0].scrollHeight);
                 }

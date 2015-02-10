@@ -213,21 +213,21 @@ function show_msg(s,me)
 	if (!me)
 	{
 		$('#typing').css('opacity','0');
-		s = '<span style="color:#FF5E5E; font-size:26px">'+s+'</span>'; //strager msg css
+		s = '<span style="color:#FF5E5E; font-size:26px">'+s+'</span>'
+        +'<script type="text/javascript">chatSound.play();</script>'; //strager receive msg sound;
         s = '<div id="strager" class="bubble">'+s+'</div>';
 		var msg = $('<div id="strager_msg" class=""></div>').html(s);
 		$('#typing').before(msg);
-		
-		toggle_title(300);	
+        toggle_title(300);
 	}
 	else
 	{
         s = '<span id="leftMsg" style="color:#1f6377; font-size:26px">'+s+'</span>';  //me msg css
 		s = '<div id="me" class="bubble bubble--alt">'+s+'</div>';
         var msg = $('<div id="me_msg" class=""></div>').html(s);
-		$('#typing').before(msg);
-		
+        $('#typing').before(msg);
 		$('#content').focus();
+
 	}
 	msg.width('0%').animate({width:'100%'},300);
 	$('#chat_window').get(0).scrollTop = $('#chat_window').get(0).scrollHeight;
