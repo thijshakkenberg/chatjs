@@ -25,7 +25,7 @@ $maxdisplay = 300;
 //语言
 $lang = array(
 //聊天室描述
-"description"=>"欢迎来到龙口聊天室</a>", 
+"description"=>"Welkom wie.nu</a>",
 //聊天室标题
 "title"=>"Mini AJAX Chatroom By longkou", 
 //第一个到聊天室的欢迎
@@ -33,9 +33,9 @@ $lang = array(
 //当信息有禁止内容时显示
 "ban"=>"I am a pig!",
 //关键字
-"keywords"=>"龙口聊天室,龙口论坛,龙聊,龙口网论坛,Chat,Chatroom,Cold,in0818.com,PHP,Javascript",
+"keywords"=>"wie.nu,Chat,Chatroom,Cold,in0818.com,PHP,Javascript",
 //发言提示
-"hereyourwords" => "在这里发言!"
+"hereyourwords" => "Chat here"
 );
 
 error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
@@ -370,19 +370,19 @@ else
  <meta name="keywords" content="<?php echo $lang["keywords"];?>">
  <meta name="description" content="Mini AJAX Chatroom By Cold. <?php echo $description;?>">
 
-<style type='text/css'>
-body	{ text-align:center; color:#333333; font-size:12px; font-family:宋体;}
-a	{ text-decoration:none; color:#a2b700; }
-.mydiv	{ text-align:left; margin:5px; padding:5px; border:1px solid #ff8c05; background-color:#fdd283; width:600px; }
-.inputtext	{ border:0px; border-bottom:1px solid #333333; background-color:transparent;}
-.submit	{ border:1px solid #ff8c05; background-color:transparent; }
-.contents	{ border:1px solid #ff8c05;margin:5px; margin-top:10px;background-color:#ffffff; overflow:auto;word-break:break-all;word-wrap :break-word;}
-.bg	{ background-color:#ffffff; }
-.content	{ border:0px;background-color:transparent;width:auto; font-size:16px; font-family:Fixedsys; margin:2px; padding:1px; }
-.time	{ color:#aaaaaa; font-size:10px; font-family:Arial;}
-.online	{ margin:5px; padding:0px; display:inline; }
-.mybut	{ width:20px; height:20px; background-color:#ff8c05; text-align:center; font-size:18px; color: #333333;}
-</style>
+<!--<style type='text/css'>-->
+<!--body	{ text-align:center; color:#333333; font-size:12px; font-family:宋体;}-->
+<!--a	{ text-decoration:none; color:#a2b700; }-->
+<!--.mydiv	{ text-align:left; margin:5px; padding:5px; border:1px solid #ff8c05; background-color:#fdd283; width:600px; }-->
+<!--.inputtext	{ border:0px; border-bottom:1px solid #333333; background-color:transparent;}-->
+<!--.submit	{ border:1px solid #ff8c05; background-color:transparent; }-->
+<!--.contents	{ border:1px solid #ff8c05;margin:5px; margin-top:10px;background-color:#ffffff; overflow:auto;word-break:break-all;word-wrap :break-word;}-->
+<!--.bg	{ background-color:#ffffff; }-->
+<!--.content	{ border:0px;background-color:transparent;width:auto; font-size:16px; font-family:Fixedsys; margin:2px; padding:1px; }-->
+<!--.time	{ color:#aaaaaa; font-size:10px; font-family:Arial;}-->
+<!--.online	{ margin:5px; padding:0px; display:inline; }-->
+<!--.mybut	{ width:20px; height:20px; background-color:#ff8c05; text-align:center; font-size:18px; color: #333333;}-->
+<!--</style>-->
 
 <script>
 function $(obj)
@@ -546,7 +546,7 @@ setInterval("keeponline()",touchs*1000);
 
 function quitroom()
 {
-	if(confirm("你真的要离开聊天室吗?"))
+	if(confirm("you sure you want leave?"))
 	{
 		var ajax = createAJAX();
 		ajax.open('POST','<?php echo basename(__FILE__);?>',0);
@@ -764,7 +764,7 @@ send_ajax_change  = function()
 		if (debug) alert("send_ajax response:"+send_ajax.responseText);
 		if (send_ajax.responseText.indexOf("NAME")!=-1)
 		{
-			alert('已经有人使用你的昵称了');
+			alert('The name have already use');
 			$('chat_user').value = "";
 			$('chat_user').focus();
 		}

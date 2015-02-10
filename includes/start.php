@@ -1,5 +1,5 @@
 <?php
-include('common.php');
+include('../includes/common.php');
 $id = rand(1111111111,9999999999);
 mysql_query("DELETE FROM `chat_event` WHERE `time`<'".(time()-30)."'");
 $_ip = ip();

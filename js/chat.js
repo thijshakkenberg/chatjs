@@ -256,12 +256,12 @@ function stop_typing()
 function show_reconnect()
 {
 	$('#typing').before($('<div class="noticication"></div>').html(
-		'<input class="btn btn-primary" type="button" onclick="reconnect()" value="'+lang.reconnect+'" />'+lang.contact_me
-		+'&nbsp;<form action="../includes/download.php" method="post" target="download_frame" onsubmit="this.content.value = $(\'#chat_window\').html();return true;">'
+		'<input class="btn btn-success" type="button" onclick="reconnect()" value="'+lang.reconnect+'" />'+lang.contact_me
+		+'&nbsp;<form action="includes/download.php" method="post" target="download_frame" onsubmit="this.content.value = $(\'#chat_window\').html();return true;">'
 		+'<input type="hidden" name="content" />'
 		+'<input type="hidden" name="url" value="'+window.location.href.replace(/\??t?=?[0-9\.]*#?[a-z]*$/i,'')+'" />'
 		+'<input type="hidden" name="title" value="'+$(document.body).data('title')+'" />'
-		+'<input type="submit" value="'+lang.download+'" /></form>'
+		//+'<input class="btn btn-warning" type="submit" value="'+lang.download+'" /></form>'
 		));
 	$('#typing').remove();
 	$('#chat_window').get(0).scrollTop = $('#chat_window').get(0).scrollHeight;

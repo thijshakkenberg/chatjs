@@ -1,5 +1,5 @@
 <?php
-include('common.php');
+include('../includes/common.php');
 
 $id = intval($_POST['id']);
 $to = intval($_POST['to']);

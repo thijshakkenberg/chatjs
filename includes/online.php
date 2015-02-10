@@ -1,5 +1,5 @@
 <?php
-include('common.php');
+include('../includes/common.php');
 $r = mysql_query("SELECT * FROM `chat_online` WHERE `time`<'".(time()-20)."'");
 if (mysql_num_rows($r) > 0)
 {
